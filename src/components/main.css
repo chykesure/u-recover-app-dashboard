@@ -1,0 +1,22 @@
+/* Main content adjustment when sidebar is expanded */
+#main {
+    margin-left: 250px; /* Push the main content to the right by the width of the sidebar */
+    transition: margin-left 0.3s ease; /* Ensure a smooth transition */
+}
+
+/* Main content adjustment when sidebar is collapsed */
+body.toggle-sidebar #main {
+    margin-left: 1px; /* Adjust the main content margin to match the collapsed sidebar */
+}
+
+#main {
+    margin-top: 60px;
+    padding: 20px 30px;
+    transition: all 0.3s;
+}
+
+@media (max-width: 1199px) {
+    #main {
+        padding: 20px;
+    }
+}

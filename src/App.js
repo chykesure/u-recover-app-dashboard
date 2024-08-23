@@ -1,22 +1,33 @@
-//import icons
-import 'bootstrap-icons/font/bootstrap-icons.css';
-import 'remixicon/fonts/remixicon.css'
+// Import React Router components
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-//import boostraps
+// Import icons and Bootstrap
+import 'bootstrap-icons/font/bootstrap-icons.css';
+import 'remixicon/fonts/remixicon.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
 
-
+// Import your components and CSS
 import './App.css';
 import Header from './components/Header';
 import SideBar from './components/SideBar';
+import Main from './components/Main';
+import Counselling from './components/Counselling';  // Import the Counselling component
 
 function App() {
   return (
-    <>
-    <Header/>
-    <SideBar/>
-    </>
+    <Router>
+      <>
+        <Header />
+        <SideBar />
+        <Routes>
+          <Route path="/" element={<Main />} />
+          <Route path="/counselling" element={<Counselling />} />
+          {/* Add other routes here as needed */}
+        </Routes>
+      </>
+    </Router>
   );
 }
 
