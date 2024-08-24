@@ -26,3 +26,27 @@
     display: flex;
     align-items: center; /* Align image and text vertically */
 }
+
+/* Sidebar hidden by default on mobile */
+@media (max-width: 1199px) {
+    .sidebar {
+        position: fixed;
+        left: -100%;
+        width: 250px;
+        top: 0;
+        bottom: 0;
+        background-color: #fff; /* Ensure sidebar has a visible background */
+        z-index: 1000; /* Make sure sidebar is on top */
+        transition: left 0.3s ease-in-out;
+    }
+
+    /* Sidebar visible when toggle-sidebar class is added */
+    body.toggle-sidebar .sidebar {
+        left: 0;
+    }
+
+    /* Ensure the rest of the page is pushed aside when the sidebar is visible */
+    body.toggle-sidebar .main-content {
+        margin-left: 250px;
+    }
+}

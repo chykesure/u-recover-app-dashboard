@@ -14,6 +14,7 @@ import Header from './components/Header';
 import SideBar from './components/SideBar';
 import Main from './components/Main';
 import Counselling from './components/Counselling';  // Import the Counselling component
+import Resources from './components/Resources';  // Import the Counselling component
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/counselling" element={<Counselling />} />
+          <Route path="/resources" element={<Resources />} />
           {/* Add other routes here as needed */}
         </Routes>
       </>

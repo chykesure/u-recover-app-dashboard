@@ -1,0 +1,337 @@
+/* General Styles */
+.main {
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Similar Books Section */
+.similar-books {
+    margin-top: 50px;
+}
+
+.similar-books-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #006400;
+    margin-bottom: 30px;
+}
+
+.similar-book-cover {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.similar-book-title {
+    font-size: 16px;
+    font-weight: normal;
+    color: #333;
+}
+
+/* Book Cover and Details */
+.book-cover {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.book-details {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+    text-align: left;
+    font-size: 18px;
+}
+
+.book-details li {
+    margin-bottom: 10px;
+}
+
+.download-btn {
+    align-self: flex-start;
+    font-size: 20px;
+    padding: 12px 20px;
+    font-weight: bold;
+}
+
+/* Title and Ratings */
+.book-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+}
+
+.book-authors {
+    font-size: 18px;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.book-rating {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #777;
+}
+
+.stars {
+    font-size: 24px;
+    color: #0b6e0e;
+}
+
+.rating-score {
+    margin-left: 10px;
+}
+
+.book-tags .badge {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.about-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #333;
+}
+
+.book-description {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Review Form */
+.review-section {
+    margin-top: 50px;
+}
+
+.review-form {
+    margin-bottom: 50px;
+}
+
+.stars-input {
+    font-size: 24px;
+    color: #ffdd57;
+    cursor: pointer;
+}
+
+.review-form .form-control {
+    border: 1px solid #28a745;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* Rating Summary */
+.rating-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.average-rating {
+    font-size: 72px;
+    margin: 0;
+    color: #28a745;
+}
+
+.rating-stars {
+    font-size: 24px;
+    color: #ffdd57;
+}
+
+.rating-breakdown {
+    flex-grow: 1;
+    margin-left: 20px;
+}
+
+.rating-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.rating-bar {
+    width: 80%;
+    background-color: #e9ecef;
+    height: 8px;
+    margin-left: 10px;
+    border-radius: 4px;
+    position: relative;
+}
+
+.rating-bar-fill {
+    background-color: #28a745;
+    height: 100%;
+    border-radius: 4px;
+    position: absolute;
+}
+
+/* User Review */
+.user-review {
+    display: flex;
+    margin-top: 30px;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.user-profile img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-info strong {
+    font-size: 18px;
+}
+
+.user-rating {
+    font-size: 18px;
+    color: #ffdd57;
+}
+
+.user-review-text {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* User Reviews */
+.user-reviews {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.review-card {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    background-color: transparent;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.user-profile img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.user-info strong {
+    font-size: 18px;
+}
+
+.user-rating {
+    font-size: 18px;
+    color: #ffdd57;
+}
+
+.user-review-text {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.page-btn {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.page-btn:hover {
+    background-color: #218838;
+}
+
+.page-btn.prev {
+    margin-right: 10px;
+}
+
+.page-btn.next {
+    margin-left: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .book-title {
+        font-size: 24px;
+    }
+
+    .about-title {
+        font-size: 20px;
+    }
+
+    .book-description {
+        font-size: 14px;
+    }
+
+    .book-cover {
+        max-width: 150px;
+    }
+
+    .download-btn {
+        font-size: 16px;
+    }
+
+    .average-rating {
+        font-size: 48px;
+    }
+
+    .rating-stars, .stars-input {
+        font-size: 20px;
+    }
+
+    .user-info strong, .user-rating, .user-review-text {
+        font-size: 14px;
+    }
+
+    .similar-book-cover {
+        max-width: 100px;
+    }
+
+    .similar-book-title {
+        font-size: 14px;
+    }
+}
