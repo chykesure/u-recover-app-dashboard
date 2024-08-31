@@ -15,6 +15,9 @@ import SideBar from './components/SideBar';
 import Main from './components/Main';
 import Counselling from './components/Counselling';  // Import the Counselling component
 import Resources from './components/Resources';  // Import the Counselling component
+import Profile from './components/Profile';
+import Chatbox from './components/Chatbox';
+import CounsellorSignUp from './components/CounsellorSignUp';
 
 function App() {
   return (
@@ -26,6 +29,9 @@ function App() {
           <Route path="/" element={<Main />} />
           <Route path="/counselling" element={<Counselling />} />
           <Route path="/resources" element={<Resources />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/chat" element={<Chatbox />} />
+          <Route path="/settings" element={<CounsellorSignUp />} />
           {/* Add other routes here as needed */}
         </Routes>
       </>

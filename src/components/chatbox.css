@@ -1,0 +1,53 @@
+.chatbox-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    background-image: url('../images/chat.png'); /* Adjust path as necessary */
+    background-size: cover; /* Adjust the zoom level */
+    background-position: cover;
+    background-repeat: no-repeat;
+}
+
+/* Grey overlay to reduce brightness */
+.chatbox-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(151, 147, 147, 0.899); /* Adjust opacity for desired effect */
+    z-index: 1;
+}
+
+.chatbox-content {
+    text-align: center;
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 8px;
+    z-index: 2; /* Ensure content is above the overlay */
+    position: relative;
+    margin-left: 17%;
+}
+
+.chatbox-content p {
+    font-size: 1.9rem;
+    margin-bottom: 10px;
+    font-weight: bolder;
+}
+
+.chatbox-button {
+    background-color: #198754;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.8rem;
+}
+
+.chatbox-button:hover {
+    background-color: #157347;
+}

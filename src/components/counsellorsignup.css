@@ -1,0 +1,83 @@
+.active-item {
+    background-color: #e9ecef; /* Light grey background */
+    border-radius: 0.25rem;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.active-item:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Optional: highlight focus */
+}
+
+.list-group-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.list-group-item:hover {
+    background-color: #f1f3f5; /* Slightly darker grey on hover */
+    border-radius: 0.25rem;
+    cursor: pointer; /* Changes cursor to pointer to indicate interactivity */
+    transform: translateY(-5px); /* Swipe up effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow for depth */
+}
+
+.main-logo {
+    width: 80px;
+    height: auto;
+}
+
+.form-input {
+    border: 2px solid #198754;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.form-input:focus {
+    border-color: #198754;
+    box-shadow: 0 0 5px rgba(25, 135, 84, 0.5);
+}
+
+.google-btn {
+    background-color: white;
+    border: 2px solid #ccc;
+    color: #000;
+    font-weight: bold;
+}
+
+.google-btn:hover {
+    background-color: #f1f1f1;
+}
+
+.continue-btn {
+    background-color: #198754;
+    border: none;
+    padding: 12px;
+    font-size: 1.1rem;
+}
+
+.continue-btn:hover {
+    background-color: #157347;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #ccc;
+}
+
+.divider::before {
+    margin-right: 10px;
+}
+
+.divider::after {
+    margin-left: 10px;
+}
